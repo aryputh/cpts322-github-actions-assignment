@@ -24,4 +24,4 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: Run tests
-        run: pytest --maxfail=5 --disable-warnings
+        run: PYTHONPATH=src pytest --maxfail=5 --disable-warnings
